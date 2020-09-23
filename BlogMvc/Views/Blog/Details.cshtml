@@ -1,0 +1,102 @@
+﻿@model BlogMvc.Models.Blog
+
+@{
+    ViewBag.Title = "Blog Detay";
+}
+
+
+
+<div class="row">
+    <h1>@Model.Baslik</h1>
+    <div class="col-md-8">
+
+        <hr />
+        <p>
+            <span class="glyphicon glyphicon-time"></span>
+            @Model.EklenmeTarihi
+        </p>
+        <img class="img-responsive" src="http://placehold.it/900x300" alt="Alternate Text" />
+        <hr />
+        <blockquote>
+            <p>@Model.Aciklama</p>
+        </blockquote>
+        <p>@Model.Icerik</p>
+
+        <div class="comment">
+            <hr />
+            <div class="well">
+                <h4>Yorum ve Görüşlerinizi Yazabilirsiniz</h4>
+                <form role="form">
+                    <div class="form-group">
+                        <textarea class="form-control" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Yorum Yap</button>
+                </form>
+            </div>
+            <hr />
+            <div style="background-color: #c6c9c5" class="media">
+                <img src="..." class="mr-3" alt="...">
+                <div class="media-body">
+                    <h4 class="mt-0">Yorumcu</h4>
+                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                </div>
+            </div>
+            <div style="background-color: #c6c9c5" class="media">
+                <img src="..." class="mr-3" alt="...">
+                <div class="media-body">
+                    <h4 class="mt-0">Yorumcu</h4>
+                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                </div>
+            </div>
+
+        </div>
+
+      
+
+    </div>
+
+
+
+    <div class="col-md-4">
+        <div class="well">
+            <h4>Blog Ara</h4>
+            <div class="input-group">
+                <input type="text" class="form-control">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                </span>
+            </div>
+            <!-- /.input-group -->
+        </div>
+        <div class="well">
+            <div class="row">
+                <div class="col-lg-6">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#">content</a>
+                        </li>
+                        <li>
+                            <a href="#">content</a>
+                        </li>
+                        <li>
+                            <a href="#">content</a>
+                        </li>
+                        <li>
+                            <a href="#">content</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+</div>     
+
+ 
+
+
